@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 11.0px Monaco; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 11.0px Monaco; color: #000000; -webkit-text-stroke: #000000; min-height: 15.0px}
+    span.s1 {font-kerning: none}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">—————————————————————————————————————————————————</span></p>
+<p class="p1"><span class="s1">| 2D Elastic Collisions In a Circular Container |</span></p>
+<p class="p1"><span class="s1">—————————————————————————————————————————————————</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">CONTENTS OF THIS FILE</span></p>
+<p class="p1"><span class="s1">---------------------</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Introduction</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Requirements</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* How to run</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Configuration</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Troubleshooting &amp; FAQ</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">INTRODUCTION</span></p>
+<p class="p1"><span class="s1">------------</span></p>
+<p class="p1"><span class="s1">A simulation was created using python to simulate the elastic collision of circular particles in a circular container, to investigate the laws of thermodynamics. This simulation can demonstrate the thermodynamic relations between pressure, volume, temperature and number of particles. Along with investigating the Maxwell Boltzmann distribution and constants for Van Der Waal's gas equation.</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">REQUIREMENTS</span></p>
+<p class="p1"><span class="s1">------------</span></p>
+<p class="p1"><span class="s1">Spyder 3.0 or above.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">Packaages include:<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Numpy</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Pylab</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Matplotlib</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">HOW TO RUN</span></p>
+<p class="p1"><span class="s1">------------</span></p>
+<p class="p1"><span class="s1">No installation needed. Just open the file and click run.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">TEST_(x) files represent test scripts to extract simulation data from the program. These include</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* TEST_Animation.py<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(To test animation)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* TEST_Thermodynamics.py<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(To test thermodynamic relations)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* TEST_Maxwell_Boltzmann.py<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(To test Maxwell-Boltzmann Distribtion)<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* TEST_VDW.py<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(To test Van Der Waal’s Gases)</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">Classes include<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Ball.py</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Container.py</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Ball_Generator.py</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* Simualtion.py</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">Config Files include:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>* config.py</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">NOTE: DO NOT CHANGE NAMES OF FILES.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">CONFIGURATION</span></p>
+<p class="p1"><span class="s1">------------</span></p>
+<p class="p1"><span class="s1">Found inside the config files are the default parameters for the simulation. Parameters by default are set to an O2 oxygen gas at room temperature and pressure conditions.<span class="Apple-converted-space">  </span>Key parameters can also be changed within any TEST_(x) file, thus might not be necessary to configure parameters using this file. Only open if parameter not listed at the top of a TEST_(x) file.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">TROUBLESHOOTING &amp; FAQ</span></p>
+<p class="p1"><span class="s1">------------</span></p>
+<p class="p1"><span class="s1">Please contact @sfg17 for issues, details and questions.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+</body>
+</html>
